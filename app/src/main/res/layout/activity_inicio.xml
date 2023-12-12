@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".inicio">
+
+  <ImageView
+      android:id="@+id/imageView"
+      android:layout_width="0dp"
+      android:layout_height="287dp"
+      android:layout_marginStart="10dp"
+      android:layout_marginTop="16dp"
+      android:layout_marginEnd="10dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      tools:srcCompat="@tools:sample/avatars" />
+
+  <TextView
+      android:id="@+id/lblUsuario"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="30dp"
+      android:layout_marginTop="28dp"
+      android:layout_marginEnd="30dp"
+      android:text="TextView"
+      android:textAlignment="center"
+      android:textSize="48sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.602"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+  <TextView
+      android:id="@+id/lblCodUsuario"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="30dp"
+      android:layout_marginTop="20dp"
+      android:layout_marginEnd="30dp"
+      android:text="TextView"
+      android:textAlignment="center"
+      android:textSize="34sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.584"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/lblUsuario" />
+
+  <TableRow
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="10dp"
+      android:layout_marginTop="50dp"
+      android:layout_marginEnd="10dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/lblCodUsuario">
+
+    <ImageButton
+        android:id="@+id/btnPerfil"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@android:drawable/arrow_up_float" />
+
+    <ImageButton
+        android:id="@+id/btnControl"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@android:drawable/checkbox_on_background"
+        tools:ignore="DuplicateIds" />
+    <ImageButton
+        android:id="@+id/btnSalir"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@android:drawable/ic_delete"
+        tools:ignore="DuplicateIds" />
+
+  </TableRow>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
